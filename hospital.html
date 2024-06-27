@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            background: burlywood;
+           
+        }
+        .header img{
+            width: 50px;
+            height: 46px;           
+        }
+        .header a{
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;                      
+        }
+        .header a:hover{
+            color: blue;
+            border: 1px solid crimson;
+        }
+        .body h3,p{
+            margin-left: 20px;
+        }
+        .body h4 {
+           margin-left: 1200px;
+           margin-top: -50px;
+        }
+        .body button{
+            float: right;
+            margin-top: -50px;
+            margin-right: 20px;          
+        }
+        .container{
+            max-width: 1900px;
+            height: 350px;
+            margin: 0;           
+            background: rgb(184, 134, 230);
+        }
+        .container .bi,.fa{
+            color: gold;
+            font-size: 25px;
+        }
+        .container .covid1{
+            margin-left: 300px;
+            margin-top: -50px;
+        }
+        .form  form{
+            float: right;
+            width: 340px;
+            height: 350px;
+            border: 2px solid rgb(166, 158, 158);
+            background: rgb(186, 183, 183);
+            margin-right: 5px;
+            margin-top: -350px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .container1 .content{
+            width: 780px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+        
+        .container1 .content img{
+            float: right;
+            margin-top: -150px;
+            width: 250px;
+            margin-right: 5px;
+        }
+        .container1 .content button{
+            text-align: center;
+            margin-left: 200px;
+        }
+        .container1 .content2 {
+            width: 780px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-left: 600px;
+            
+        }
+        .container1 .content2  img{
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 5px;
+           
+        }
+        .container1 .content2 .cont{
+            margin-top: -180px;
+            margin-left: 300px;
+        }
+        .container1 .content2 button{
+            text-align: center;
+            margin-left: 200px;
+        }
+        .why-choose{
+            margin-top: 190px;
+            margin-left: 100px;
+        }
+        .why-choose .cont1{
+            margin-left: 500px;
+            margin-top: -200px;
+        }
+        .why-choose .cont2{
+            margin-left: 500px;
+            margin-top: 80px;
+        }
+        .why-choose .cont3{
+            margin-left: 1000px;
+            margin-top: -330px;
+        }
+        .why-choose .cont4{
+            margin-left: 1000px;
+            margin-top: 50px;
+        }
+      .specialities img{
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        margin-left: 20px;
+        padding-left: 20px;
+      }
+      .img img{
+        float: right;
+        margin-top: -430px;
+        margin-right: 20px;
+        width: 500px;
+        height: 400px;
+      }
+      .doct{
+        width: 370px;
+        height: 190px;
+        border: 2px solid black;
+      }
+      .doct img{
+        width: 100px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      
+      .best-doctors .img1 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .best-doctors .img2{
+        margin-left: 480px;
+        margin-top: -150px;
+      }
+      .best-doctors .img2 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .best-doctors .img3{
+        margin-left: 980px;
+        margin-top: -140px;
+      }
+      .best-doctors .img3 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .best-doctors .img4{
+        margin-left: 980px;
+        margin-top: 50px;
+      }
+      .best-doctors .img4 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .best-doctors .img5{
+        margin-left: 480px;
+        margin-top: -150px;
+      }
+      .best-doctors .img5 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .best-doctors .img6{      
+        margin-top: -100px;
+      }
+      .best-doctors .img6 span{
+        float: right;
+        margin-top: -50px;
+        margin-left: 30px;
+      }
+      .box {       
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background: burlywood;
+        border-radius: 100px;
+      }
+      .box h2,h4{
+        margin-top: 30px;
+
+      }
+      .box form{
+        width: 200px;
+        height: 300px;
+        margin-left: 600px;
+        text-align: center;
+      }
+      footer{
+        margin-top: 150px;
+        width: 100%;
+        height: 330px;
+        background: rgba(224, 19, 19, 0.852);
+      }
+      footer .foot{
+        padding: 30px;
+        margin-left: 100px;
+      }
+      .foot .fa{
+        color: black;
+        font-size: 30px;
+        padding-left: 20px;
+      }
+      .foot .links a{
+        padding-left: 20px;
+        text-decoration: none;
+        color: rgb(254, 252, 252);
+      }
+      footer .form2 form{
+        width: 200px;
+        height: auto;
+        text-align: center;
+        background-color: bisque;
+        margin-left: 1000px;
+        margin-top: -200px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwW3OfDeJ0zi_512hAV2PsKV6vE5VRCfFkw&usqp=CAU" alt="">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Specializations</a>
+        <a href="">Blocks</a>
+        <a href="">Branches</a>
+        <a href="">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwW3OfDeJ0zi_512hAV2PsKV6vE5VRCfFkw&usqp=CAU" alt="">
+    </div>
+    <div class="body">
+        <h3 class="logo">Ayu Health Hospitals</h3>
+        <p>India's most trusted network of high quality hospitals.</p>
+        <h4>Contact  us at <br>  636-610-0800</h4>
+        <button  type="button" class="btn btn-primary">Book an appointment</button>         
+    </div>
+    <div class="container">
+        <h2>Highest  rated chain of hospitals in <br> Hyderabad</h2>
+        <i class="bi-google"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>&nbsp;&nbsp;4.5  <br><br><br>
+       <p class="covid">COVID-19 SAFE: Fully <br>sanitized hospitals</p>
+       <p class="covid1">Our  hospitals are NABH <br> pre-accredited</p>
+    </div>
+    <div class="form">
+    <form action="">
+        <h2>Let's Schedule an Appointment</h2>
+        <p>Our team will get in touch with you</p>
+        <label for="">Name*</label><br>
+        <input type="text"  placeholder="Enter your name"><br><br>
+        <label for="">Mobile Number*</label> <br>
+        <input type="number" placeholder="Enter your number"> <br><br>
+        <button type="button" class="btn btn-warning btn-lg">Get A Call Back</button>
+       </form>
+    </div> <br><br>
+    <div class="container1">
+        <div class="content">
+           <h3>Lab test from the comfort of your home</h3>
+           <p>Get your all Lab tests done at the comfort of your home with Ayu health hospital.<br>Book a test to get quality reports trusted by leading doctors.</p>
+           <ol>
+            <li>Top-notch quality accurate tests at affordable prices</li>
+            <li>Easy and convenient online lab test booking.</li>
+            <li>We offer wide range  of lab tests like MRI,CT Scan,X-Ray and more.</li>
+           </ol>
+           <button type="button" class="btn btn-warning btn-lg">  Book Now</button>
+           <img src="https://www.bing.com/th?id=OIP.GeoZTE-Ls7HpG3sYURelNAHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+        </div><br><br>
+        <div class="content2">
+            <img src="https://assets.thehansindia.com/h-upload/2021/05/14/1076291-test.webp" alt="">
+            <div class="cont">
+                <h3>Visit our Diagnostic Centre</h3>
+                <p>Visit our Diagnostic centre  for wide range of affordable lab tests. <br> Book a Test to get quality reports trusted by leading doctors. </p>
+                <ol>
+                    <li>High quality diagnostic services</li>
+                    <li>Rigid external and internal quality examination</li>
+                    <li>We offer wide range of lab tests like MRI, CT scan ,X-ray and more.</li>
+                </ol>
+                <button type="button" class="btn btn-warning btn-lg">Book Now</button>
+            </div>
+        </div>
+    </div> <br> <br>
+    <div class="why-choose">
+        <h2>Why choose Ayu <br> Health Hospitals</h2>
+        <p>100% guaranteed clinical outcomes.</p>
+        <div class="cont1">
+            <i class=" fa fa-lock"></i>
+            <h3>100% Fixed Price Packages</h3>
+            <p>We believe in complete transpery and 0 <br> hidden charges-so cam focus on  your healthcare. </p>
+        </div>
+        <div class="cont2">
+            <span>&#37;</span>
+            <h3>Affordable prices & 0% EMI</h3>
+            <p>We help you get the best care without <br> creating any financial hardships</p>                   
+        </div>
+        <div class="cont3">
+            <i class="bi bi-person"></i>
+            <h3> Specialists trained at institutes like AIIMS,PGI</h3>
+            <p>Our team of medical Specialists and NABH <br> accredited hospitals ensures best medical <br> care for you  and your loved ones. </p> 
+        </div>
+        <div class="cont4">
+           <i class="fa fa-shield"></i>
+            <h3> Complete Insurance Support</h3>
+            <p>  We have partened with over 100 insurance <br> providers across india to provide quick <br> cashies services for all treatments.</p> 
+        </div>
+    </div>
+    <div class="specialities">
+        <h2>Center of excellence</h2>
+        <button type="button" class="btn btn-borderless">specialities</button><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRa2wfyGWPKydHli2WV1A65EwsEdv5-bNJYg&usqp=CAU" alt="">
+        <span>Cardiology</span>
+        <img src="https://img.freepik.com/premium-vector/oncology-illustration-flat-tiny-cancer-disease-research-persons-concept_126608-1315.jpg" alt="">
+        <span>Oncology</span>
+        <img src="https://media.istockphoto.com/id/1273907722/vector/infected-woman-in-a-hospital.jpg?s=612x612&w=0&k=20&c=BkhwC_E9KTR43lMo7M-YD4_nPBNHhMyIxBWqIW5kj8c=" alt="">
+        <span>Critical Care</span>
+        <img src="https://thumbs.dreamstime.com/z/illustration-sick-urology-vector-original-paintings-drawing-93975352.jpg" alt="">
+        <span>Urology</span><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9H-J4i75NfLwLpmS7h0b6K3ebe3XlwpXh5Q&usqp=CAU" alt="">
+        <span>Cardiac Surgery</span>
+        <img src="https://thumbs.dreamstime.com/z/neuronal-network-electrical-activity-neuron-cells-d-rendering-illustration-neuroscience-neurology-nervous-system-177768411.jpg" alt="">
+        <span>Neurology</span>
+        <img src="https://img.lovepik.com/photo/40218/9023.jpg_wh300.jpg" alt="">
+        <span>Orthopaedics</span> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjdrvLxymsa1KkLP6ZRHvmd4jA0CiA-gejg&usqp=CAU" alt="">
+        <span>Pediatrics</span> <br><br>
+        <button type="button" class="btn btn-borderless"> Procedures</button><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAGtY2iZdH4EkNA93Y6psRKrHw8W3U86E7g&usqp=CAU" alt="">
+        <span> Total Knee Replacement</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4C_U1M2lpAHFXbGHm5lKM-vz2sF3bEHkGw&usqp=CAU" alt="">
+        <span>Coronary Angioplasty</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJowq7pWpA9oQ8A0Y2ELNb-M1DGm9iOe1_qA&usqp=CAU" alt="">
+        <span>Piles [Hemorrhoids]</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Y8abzq5maWJxPWa7R4NJMNXiyL2UEatdPQ&usqp=CAU" alt="">
+        <span>Kidney Stone</span> <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVobXxqlsBd3V9PJkHmFokrRSnbsbSrxWbw&usqp=CAU" alt="">
+        <span>Prostate Enlargement</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSleY8QN0dcs-z1IVTYuy3VRpM_9ud9rXkNyA&usqp=CAU" alt="">
+        <span>Gallstones</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXtzKzTsRh-ou-DiBZn-oADqqhoexHgxkuw&usqp=CAU" alt="">
+        <span>Bariatric Surgery</span>
+        <img src="https://thumbs.dreamstime.com/b/laser-hair-removal-black-line-icon-device-means-exposure-to-pulses-light-destroy-follicle-pictogram-web-page-181933103.jpg" alt="">
+        <span>Laser Hair Reduction</span>
+    </div>
+    <div class="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4u7GIZQfvAQpSobu6pd-v7duMdp3raul0Q&usqp=CAU" alt="">
+    </div>
+   <div class="best-doctors">
+        <h2>Best Doctors in Hyderabad</h2>
+        <h4>Top Specialists with years of experience</h4>
+        <div class="doct img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfzxOCOCnKB9PJnEa4qxCM1UikjG-53vT0g&usqp=CAU" alt=""> <br>
+            <span>Dr.B.P.Mruthyunjayanna <br>MBBS, MD(Medicine),.... <br> 58 years clinical experience <br>
+               
+                <button>view details</button>
+                <button>Book Appointment</button>       
+            </span>
+        </div>
+        <div class="doct img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AhHFfOzwsP7tccL5_IzNEGVPhkUzQbsSTw&usqp=CAU" alt=""> <br>
+            <span>Dr.SS.Ramesh <br>MBBS, MD( General Medicine),.... <br> 48 years clinical experience <br>
+           
+        
+                <button>view details</button>
+                <button>Book Appointment</button>       
+             </span>
+        </div>
+        <div class="doct img3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs52V0RgowICixp-aw2w-Cz-pMIAPZz0NzUA&usqp=CAU" alt=""> <br>
+            <span>Dr.Prakash M.N <br>MBBS, MD( Psychiatry),.... <br> 45 years clinical experience <br>
+                <button>view details</button>
+                <button>Book Appointment</button>       
+            </span>
+        </div>
+        <div class="doct img4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QhjRJKfxNsyqz7vTVU5hmOJfiAjeeEfrlg&usqp=CAU" alt=""> <br>
+            <span>Dr.A.K.Jelani<br>MBBS,Diploma in Orthopaedics,.... <br> 45 years clinical experience <br><br>
+                
+                <button>view details</button>
+                <button>Book Appointment</button>       
+            </span>
+        </div>
+        <div class="doct img5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQuoHXPkbkell4TSuzLnPdH-swnsMkm-krhg&usqp=CAU" alt=""> <br>
+            <span>Dr.S C Rajendran <br>MBBS, MD( Dermatology),.... <br> 43 years clinical experience <br><br>
+                
+                <button>view details</button>
+                <button>Book Appointment</button>       
+            </span>
+        </div> 
+        <div class="doct img6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnaFYzpJ3T2AlXwwKLVU79A109HvDnUCPAW_JtxGSePbIsQFrixhn0UlC1pO6gyISFZI4&usqp=CAU" alt=""> <br>
+            <span>Dr.R S Vasanth Kumar <br>MBBS, MD( General Medicine),.... <br> 42 years clinical experience <br><br> <br>
+                 
+                <button>view details</button>
+                <button>Book Appointment</button>       
+            </span>
+        </div>
+   </div><br>
+   <div class="box">
+    <h2>Cashless facility for all  major treatments</h2>
+    <h4>Coverage for  all insurance cards</h4><br><br><br>
+    <form action="">
+        <label for="">Name*</label><br>
+        <input type="text"> <br><br>
+       <label for=""> Mobile Number*</label> <br>
+       <input type="number"> <br><br>
+       <button class="btn btn-warning">Check your insurance coverage</button>
+    </form>
+   </div>
+   <div class="contact">
+    <h2>Contact us anytime</h2>
+    <p>Email id: contact@ayu.health</p>
+    <p>Call us at: 04045210696   04048210010</p>
+   </div>  
+   <footer>
+      <div class="foot">
+            <h2>Connect with us</h2>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-whatsapp"></i><br><br>
+            <div class="links">
+                 <a href="#">FAQs</a>
+                 <a href="#">About Us</a>
+                 <a href="#">Terms of Use</a><br><br>
+                <a href="#">Privacy Policy</a>
+                <a href="#">EEO Policy</a>
+                <a href="#">Blogs</a>
+            </div>
+
+        </div>
+        <div class="form2">
+            <form action="">
+                <label for="">Patient Name*</label> <br>
+                <input type="text"> <br><br>
+                <label for="">Mobile Number*</label><br>
+                <input type="number"><br><br>
+                <label for="">Adress</label><br>
+                <input type="text"><br> <br>
+                <button class="btn  btn-info btn-lg">Submit</button>
+
+            </form>
+        </div>
+   </footer>  
+    
+</body>
+</html>
+
+        
+       
+        
